@@ -33,5 +33,8 @@ void loop()
     digitalWrite(ledPin, HIGH);
     ledState = !ledState;
   }
-  delay(500);
+  //等待按键松开
+  while(digitalRead(buttonPin)==LOW)
+  {
+  }
 }
